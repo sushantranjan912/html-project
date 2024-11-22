@@ -1,0 +1,235 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+   scroll-behavior: smooth; 
+}
+
+#navbar{
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+}
+#logo{
+    margin: -1px 15px;
+}
+#logo img{
+    height: 91px;
+    margin: 3px 5px;
+}
+#navbar ul{
+    display:flex;
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size:1.3rem;
+}
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:3px 22px;
+    border-radius:20px;
+    text-decoration:none;
+
+}
+#navbar ul li a:hover{
+    color:rgb(13, 97, 19);
+    background-color:rgb(200, 249, 3);
+
+}
+.login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ed2709;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 600px;
+}
+
+.login-button:hover {
+    background-color: #f608d6; 
+}
+ 
+#home{
+    display:flex;
+    flex-direction:column;
+    padding:3px 200px;
+    height:478px;
+    justify-content:center;
+    align-items:center;
+}
+#home::before{
+    content:"";
+    background:url("https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_1280.jpg") 
+    no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+}
+#home h1{
+    color:white;
+    text-align: center;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size:1.5rem
+}
+#services{
+  margin:34px;
+  display:flex;  
+}
+#services .box{
+    border: 2px solid brown;
+    padding:34px;
+    margin:6px;
+    border-radius:23px;
+    background-color:rgb(253, 247, 247);
+}
+#services .box img{
+    height:160px;
+    display: block;
+    margin:auto;
+}
+.center{
+    text-align: center;
+}
+.h secondary{
+    font-size:2.8rem;
+    padding:12px;
+
+}
+#client-section::before{
+  content: "";
+  position:absolute;
+  background: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");  
+  width:100%;
+  height:45%;
+  z-index:-1;
+  opacity:0.4;
+}
+#client-section{
+    height:344px;
+}
+#clients{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.client-item{
+    padding:34px;
+}
+#clients img{
+    height:124px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#contact{
+    position:relative;
+}
+#contact::before{
+    content: "";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.3;
+    background:
+    url("https://www.etc-web.com/wp-content/uploads/contact-us_banner.jpg")
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px;
+}
+#contact-box input,
+#contacty-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius:9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+.login-button1{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #088508;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 300px;
+}
+
+
+footer{
+    background:black;
+    color:rgb(4, 251, 4);
+    padding:9px 20px;
+}
+
+
+.hp{
+    font-size:3.8rem;
+    padding:12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:brown;
+    color:white;
+    margin:17px;
+    font-size:1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+
+}
+ 

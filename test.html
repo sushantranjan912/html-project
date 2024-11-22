@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Meal - Menu</title>
+<style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+#background-video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    z-index:-1;
+}
+header {
+    text-align: center;
+    padding: 1rem;
+    
+}
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    font-family: algerian;
+    color: rgb(220, 237, 35);
+    font-weight: lighter;
+}
+
+header p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+header nav a {
+    margin: 0 1rem;
+    color: rgb(250, 251, 252);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.0rem;
+    font-family: cursive;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+.menu-section {
+    padding: 2rem;
+    text-align: center;
+}
+.menu-section h2 {
+    font-size: 2rem;
+    color: #0aa37a;
+    margin-bottom: 1rem;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.menu-item {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(12, 7, 7, 0.986),
+     0 1px 3px rgb(1, 239, 45);
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #01105c;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: #eb148e;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #7f0404;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #ffbf00;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a04545;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #050505;
+    color: white;
+    margin-top: 2rem;
+}
+</style>
+</head>
+<body>
+ <header>
+        <h1>Online Meal</h1>
+        <p>Delicious food delivered to your door</p>
+        <nav>
+            <a href="#starters">Starters</a>
+            <a href="#main-dishes">Main Dishes</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#drinks">Drinks</a>
+        </nav>
+    </header>
+    <section class="menu-section" id="starters"><video autoplay muted loop id="background-video">
+        <source src="https://media.istockphoto.com/id/180617222/video/adding-a-sprinkle-of-cheese-on-pizza.mp4?s=mp4-640x640-is&k=20&c=S7sp2zrwfn8pi4yjFy74CAQI9Z12pkL7arVqw9RzgWg=" type="video/mp4">
+    </video>
+        <h2 style="font-size:3.5rem;">Starters</h2>
+        <div class="menu-grid">
+            <div id="d1" class="menu-item">
+                <img src="https://thumbs.dreamstime.com/b/tandoori-paneer-tikka-marinated-cheese-cubes-spices-yogurt-indian-dish-188315564.jpg" alt="tikka" style="height:200px;width:300px;">
+                <h3>Paneer Tikka</h3>
+                <p>Panner Tikka with special greeen mint chutney</p>
+                <p class="price">Rs 330</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.easycookingwithmolly.com/wp-content/uploads/2018/02/vegetable-kababs-recipe1.jpg" style="height:200px;width:300px;" alt="vegkabab">
+                <h3>Veg Kabab</h3>
+                <p>Enjoy the best Veg Kabab with with tomato ketchup </p>
+                <p class="price">Rs 220</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://i.pinimg.com/originals/e2/c3/cb/e2c3cb3558ab854267dab9129a82bd35.jpg" style="height:200px;width:300px;" alt="drums">
+                <h3>Drums Of Heaven</h3>
+                <p>One of the most yummy dishes of all time with juicy flavour</p>
+                <p class="price">Rs 440</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://i.pinimg.com/originals/8a/9c/34/8a9c34b7d1d3526eb60bedc636f6a8e6.jpg" style="height:200px;width:300px;" alt="cornchillie">
+                <h3>Babycorn Chilli</h3>
+                <p>Add this item to your wishlist and have a crack on it</p>
+                <p class="price">Rs 200</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="main-dishes">
+        <video autoplay muted loop id="background-video">
+            <source src="https://media.istockphoto.com/id/180617222/video/adding-a-sprinkle-of-cheese-on-pizza.mp4?s=mp4-640x640-is&k=20&c=S7sp2zrwfn8pi4yjFy74CAQI9Z12pkL7arVqw9RzgWg=" type="video/mp4">
+        </video>
+        <h2 style="font-size:3.5rem;">Main Dishes</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP.doqFDgdPPMo6Wl9wjQ9sMAHaFS?w=489&h=349&rs=1&pid=ImgDetMain" alt="paneer" style="height:200px;width:300px;">
+                <h3>Paneer Do Pyaza</h3>
+                <p> Enjoy Paneer Do Pyaza with butter naan to get some good taste</p>
+                <p class="price">Rs 240</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://i2.wp.com/www.cookingfromheart.com/wp-content/uploads/2017/11/Mushroom-Masala-2.jpg?resize=1024%2C683" alt="mushroom" style="height:200px;width:300px;">
+                <h3>Kadhai Mushroom</h3>
+                <p>Vegeterians loves this but a liitle bit underrated</p>
+                <p class="price">Rs 230</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP.Q4f5lR46RdwAqe9hXJ7dlAHaF7?rs=1&pid=ImgDetMain" alt="biryani" style="height:200px;width:300px;">
+                <h3>Chicken Biryani</h3>
+                <p>Chicken Biryani is always special and everyone's favourite</p>
+                <p class="price">Rs 400</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP.kL4EpAKgHNRs3o85C2D9iQAAAA?rs=1&pid=ImgDetMain" alt="egg masala" style="height:200px;width:300px;">
+                <h3>Egg Masala</h3>
+                <p>Classic Egg Masala with some extra gravy and have a spicy one</p>
+                <p class="price">Rs 180</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="desserts">
+        <h2 style="font-size:3.5rem;">Desserts</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP._Qcc4uJ23CeY2fby_azAOAHaGM?rs=1&pid=ImgDetMain" alt="Chococake" style="height:200px;width:300px;">
+                <h3>Chocolate Cake</h3>
+                <p>Decadent chocolate cake with a molten center.</p>
+                <p class="price">Rs 150</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/R.f5f842cb91597146df97a40f962fa699?rik=Ovkff7B2O5HSTA&riu=http%3a%2f%2fwww.rachnas-kitchen.com%2fwp-content%2fuploads%2f2016%2f02%2fimage-4.jpeg&ehk=RrNlaewVhN38uYqx70k0WkNrcx3RyP%2fJzrFRJ76PQP8%3d&risl=&pid=ImgRaw&r=0" alt="rasmalai" style="height:200px;width:300px;">
+                <h3>Rasmalai</h3>
+                <p>Have some sweet taste of Rasmalai and chill</p>
+                <p class="price">Rs 120</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://wallpapercave.com/wp/wp2157279.jpg" alt="gulabjamun" style="height:200px;width:300px;">
+                <h3>Gulam Jamun</h3>
+                <p>Very popular and always have one after dinner</p>
+                <p class="price">Rs 140</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://img.freepik.com/premium-photo/oreo-milkshake-with-oreo-biscuits-almond-served-glass-side-view-wooden-table-morning-meal_689047-2424.jpg" alt="oreoshake" style="height:200px;width:300px;">
+                <h3>Oreo Shake</h3>
+                <p>Enjoy your oreo shake with original oreo biscuits</p>
+                <p class="price">Rs 100</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="drinks">
+        <h2 style="font-size:3.5rem;">Drinks</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://g.foolcdn.com/editorial/images/589459/lemonade.jpg" alt="lemonade" style="height:200px;width:300px;">
+                <h3>Lemonade</h3>
+                <p>Refreshing lemonade made with real lemons.</p>
+                <p class="price">Rs 100</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.windingcreekranch.org/wp-content/uploads/2022/05/Homemade-iced-coffee-1200-1200.jpg" alt="coldcoffee" style="height:200px;width:300px;">
+                <h3>Cold Coffee</h3>
+                <p>Cold coffee makes your day sweeter and better</p>
+                <p class="price">Rs 110</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://noseychef.com/wp-content/uploads/2018/12/IMG_4268123.jpg" alt="whiskymac" style="height:200px;width:300px;">
+                <h3>Whisky Mac</h3>
+                <p>Get the real flavour of Whisky with your friends</p>
+                <p class="price">Rs 200</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/R.ff22ed7c54dc0eed6feb5375d8c3515d?rik=4xoMP13VynNAmw&riu=http%3a%2f%2fwww.harighotra.co.uk%2fimages%2frecipes%2fhero%2fmint_lassi_hero.jpg&ehk=C4bgA5%2b0bkXwHET54WhbUx1mzhDUkf2IKcqLwXyi1qA%3d&risl=&pid=ImgRaw&r=0" alt="mintlassi" style="height:200px;width:300px;" >
+                <h3>Mint Lassi</h3>
+                <p>Refresh your mind with with a glass full of lassi</p>
+                <p class="price">Rs 120</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Online Meal © 2024 | Delicious food, fast delivery.</p>
+    </footer>
+</body>
+</html>

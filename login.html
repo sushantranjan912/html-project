@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Foodie Delivery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1b0204, #01e3fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .login-container h2 {
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #c508f4;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container .footer-links {
+            margin-top:1.6rem;
+            font-size: 0.9rem;
+            color: #e92308;
+        }
+        .login-container .footer-links a {
+            color: #170ff7;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function mydata() {
+            var a = document.getElementById("mail").value;
+            var b = document.getElementById("pass").value;
+            
+            if (a == "" || b == "") {
+                alert("Please Enter Required data");
+                return false;
+            } else if (a === "sushant" && b === "8409") {
+                alert("Login successful");
+                return true; 
+            } else {
+                alert("Incorrect Email or Password");
+                return false; 
+        }
+    }
+    </script>
+    
+    <div style="height:400px;width:500px;background-image:url('https://images.creativemarket.com/0.1.0/ps/3683908/1820/1213/m1/fpnw/wm1/m74so5ylty5cq0la0ib6nxv0j1hbxyehlevasr0ffyzr4rf0shwldskrgw56igaj-.jpg?1512399171&s=fc09780d4ca2f5643af18a79811f5897'); background-size:cover;font-family: cursive;" class="login-container">
+        <h2 style="font-size: 3.0rem;color: #570303;">Login to Online Meal</h2>
+        <form onsubmit="return mydata()" action="food.html">
+            <input type="text" id="mail" placeholder="Email or Phone">
+            <input type="password" id="pass" placeholder="Password"><br><br>
+            <button type="submit">Log In</button>
+        </form>
+        <div class="footer-links">
+            <p style="font-size: 1.5rem;"><a href="forgot-password">Forgot Password?</a></p>
+            <p style="font-size: 1.5rem;">Don’t have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </div>
+</body></html>    
